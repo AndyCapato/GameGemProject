@@ -6,8 +6,20 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/GameJam.unity
+    path: Assets/Scenes/TitleScreen.unity
     guid: bf2f72fbfa2801f44837358b9ecc1606
+  - enabled: 1
+    path: Assets/Scenes/SquareLevel.unity
+    guid: b7bae7008fbd6584996ffe926c954dd7
+  - enabled: 1
+    path: Assets/Scenes/BakeryLevel.unity
+    guid: d91c2513fad3ae64499d6e874dbb36ec
+  - enabled: 1
+    path: Assets/Scenes/SchoolLevel.unity
+    guid: 9831630ad4803fb4facdae69c17dc291
+  - enabled: 1
+    path: Assets/Scenes/ChurchLevel.unity
+    guid: adfad2a40f3201f409334ce8364058a9
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 3590b91b4603b465dbb4216d601bff33, type: 3}
   m_UseUCBPForAssetBundles: 0
