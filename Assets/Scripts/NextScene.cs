@@ -1,9 +1,11 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using System.Collections;
+using UnityEngine.UI;
 
 public class NextScene : MonoBehaviour
 {
+    public GameObject OptionMenu;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -28,9 +30,22 @@ public class NextScene : MonoBehaviour
     {
         SceneManager.LoadScene("SchoolLevel");
     }
-      public void ChangeSceneToChurch()
+    public void ChangeSceneToChurch()
     {
-        SceneManager.LoadScene("ChurchLevel"); 
+        SceneManager.LoadScene("ChurchLevel");
+    }
+
+    public void MenuOption()
+    {
+        OptionMenu.SetActive(true);
+    }
+    public void CLoseOption()
+    {
+        OptionMenu.SetActive(false);
+    }
+       public void ChangeSceneToTitle()
+    {
+        SceneManager.LoadScene("TitleScreen");
     }
 
     public void Exit()
