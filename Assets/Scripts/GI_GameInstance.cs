@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class GI_GameInstance : MonoBehaviour
 {
+    public bool bKayFlour = false;
+
 
     public static GI_GameInstance instance { get; private set; } = null;
     void Awake()
@@ -27,6 +29,14 @@ public class GI_GameInstance : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
+
+    //Bool setter
+    public void SetFlour()
+    {
+        bKayFlour = true;
+    }
+
+    //Bool getter
 }
