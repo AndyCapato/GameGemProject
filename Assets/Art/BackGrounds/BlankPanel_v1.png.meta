@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: d0cbe7a0a3a0afe4ebc00c02ca1f72dd
+guid: c0c813257d909984fba7f4691621579a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2505129965858881550
-    second: Sheet_OptionsButton_v1_0
-  - first:
-      213: -7036902103460041590
-    second: Sheet_OptionsButton_v1_1
+      213: -7883373786550759673
+    second: BlankPanel_v1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -116,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sheet_OptionsButton_v1_0
+      name: BlankPanel_v1_0
       rect:
         serializedVersion: 2
-        x: 21
-        y: 21
-        width: 86
-        height: 86
+        x: 211
+        y: 148
+        width: 1524
+        height: 830
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,30 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2ff7bcc919dfb3dd0800000000000000
-      internalID: -2505129965858881550
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sheet_OptionsButton_v1_1
-      rect:
-        serializedVersion: 2
-        x: 150
-        y: 23
-        width: 83
-        height: 83
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a8ca01ce1d6e75e90800000000000000
-      internalID: -7036902103460041590
+      spriteID: 70f040d1f41a89290800000000000000
+      internalID: -7883373786550759673
       vertices: []
       indices: 
       edges: []
@@ -163,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -173,8 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Sheet_OptionsButton_v1_0: -2505129965858881550
-      Sheet_OptionsButton_v1_1: -7036902103460041590
+      BlankPanel_v1_0: -7883373786550759673
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
