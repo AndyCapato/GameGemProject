@@ -234,7 +234,7 @@ public class BakeryScript : MonoBehaviour
 
     //Delay
 
-    IEnumerator DelayFunction(float timer, System.Action action)
+    public IEnumerator DelayFunction(float timer, System.Action action)
     {
         yield return new WaitForSeconds(timer);
         action?.Invoke();
