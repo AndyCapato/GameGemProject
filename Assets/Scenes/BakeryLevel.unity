@@ -2461,7 +2461,7 @@ RectTransform:
   m_GameObject: {fileID: 372650082}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 11.526763, y: 11.526763, z: 2.3053527}
+  m_LocalScale: {x: 11.422, y: 11.422, z: 11.422}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2068028208}
@@ -2492,7 +2492,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 7358048741367498165, guid: d152a871c80ee774293e31e70abe0ad3, type: 3}
+  m_Sprite: {fileID: -6888884881512570361, guid: 70dd763d59c2e714a8e8c20c70f9778d, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -10595,8 +10595,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 7358048741367498165, guid: d152a871c80ee774293e31e70abe0ad3, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -11642,7 +11642,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.172325, y: 0.6940365}
+  m_AnchoredPosition: {x: 4.7, y: 2.9}
   m_SizeDelta: {x: 850.1, y: 622.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2068028209
@@ -11678,8 +11678,9 @@ MonoBehaviour:
     sei per me diventata indimenticabile.\r\nQuando l\u2019assedio finira' e l\u2019acqua
     tornera' a scorrere a fiumi, dovro' farti assaggiare nuovamente quei manicaretti,
     perche' per te la dolcezza non e' davvero mai sprecata.\r\nSe mai dovessi dimenticarmi
-    il numero che protegge il mio tesoro piu' prezioso, pensero' a te e a quel giorno.\r\n\r\nTuo
-    per sempre, \r\n\r\nGiulio\r\n"
+    il numero che protegge il mio tesoro piu' prezioso, pensero' a te e a quel giorno.
+    E se anche quello  non dovesse bastare, allora sara' il tuo nome a guidarmi.
+    \r\n\r\nTuo per sempre, \r\n\r\nGiulio\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bafb082a8bb04074fbcc19c543b49ebf, type: 2}
   m_sharedMaterial: {fileID: -1815440448539903619, guid: bafb082a8bb04074fbcc19c543b49ebf, type: 2}

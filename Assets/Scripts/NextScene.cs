@@ -67,7 +67,6 @@ public class NextScene : MonoBehaviour
             CounterBTN.interactable=false;
             PlayAudio();
             GI_GameInstance.instance.SetSaltKey();
-            CashMachineButton.interactable = false;
             Debug.Log("Correct Password!");
             // Add logic for correct password
         }
