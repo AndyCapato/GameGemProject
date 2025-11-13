@@ -300,7 +300,7 @@ MonoBehaviour:
   bHasSalt: 0
   bHasWater: 0
   bHasBread: 0
-  bHasYeastKey: 0
+  bHasSaltKey: 0
 --- !u!4 &269169891
 Transform:
   m_ObjectHideFlags: 0
