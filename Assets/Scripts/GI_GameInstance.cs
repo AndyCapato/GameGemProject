@@ -32,6 +32,11 @@ public class GI_GameInstance : MonoBehaviour
 
     }
 
+    public void TestGI()
+    {
+        Debug.Log("Funziona");
+    }
+
     //Bool setter
     public void SetFlour()
     {
