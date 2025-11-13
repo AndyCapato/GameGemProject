@@ -26,13 +26,9 @@ public class NextScene : MonoBehaviour
     {
         SceneManager.LoadScene("BakeryLevel");
     }
-    public void ChangeSceneToSchool()
+    public void ChangeSceneToWell()
     {
-        SceneManager.LoadScene("SchoolLevel");
-    }
-    public void ChangeSceneToChurch()
-    {
-        SceneManager.LoadScene("ChurchLevel");
+        SceneManager.LoadScene("WellLevel");
     }
 
     public void MenuOption()
