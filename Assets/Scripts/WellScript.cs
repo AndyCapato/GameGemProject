@@ -6,9 +6,8 @@ public class SchoolScript : MonoBehaviour
 {
     public GameObject drawerPanel;
 
-    public GameObject clockPanel;
     public TMP_InputField passwordInputField;
-    public string correctPassword = "Giulio";
+    public string correctPassword = "giulio";
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -29,8 +28,9 @@ public class SchoolScript : MonoBehaviour
 
     public void CheckPassword()
     {
-        passwordInputField.text = passwordInputField.text.Trim();
-        if (passwordInputField.text.Trim() == correctPassword)
+        //passwordInputField.text = passwordInputField.text.Trim().ToUpper();
+        Debug.Log(passwordInputField.text);
+        if (passwordInputField.text.Trim().ToUpper() == correctPassword.ToUpper())
         {
             drawerPanel.SetActive(false);
             Debug.Log("Correct Password!");
@@ -44,16 +44,10 @@ public class SchoolScript : MonoBehaviour
         Debug.Log("Password checked in SchoolScript.");
     }
 
-    public void OpenClock()
+
+        public void CLoseDrawer()
     {
-        clockPanel.SetActive(true);
-        Debug.Log("Drawer method called in SchoolScript.");
-    }
-    
-    public void CheckClock()
-    {
-        // Implement clock checking logic here
-        Debug.Log("Clock checked in SchoolScript.");
+        drawerPanel.SetActive(false);
     }
 
 }
