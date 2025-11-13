@@ -3,7 +3,14 @@ using UnityEngine;
 public class GI_GameInstance : MonoBehaviour
 {
     public bool bKayFlour = false;
+    public bool bHasYeast = false;
 
+    public bool bHasSalt = false;
+    public bool bHasWater = false;
+
+    public bool bHasBread = false;
+    
+    public bool bHasYeastKey = false;
 
     public static GI_GameInstance instance { get; private set; } = null;
     void Awake()
@@ -38,5 +45,31 @@ public class GI_GameInstance : MonoBehaviour
         bKayFlour = true;
     }
 
+    public void SetYeast()
+    {
+        bHasYeast = true;
+    }
+    
+    public void SetSalt()
+    {
+        bHasSalt = true;
+    }
+
+    public void SetWater()
+    {
+        bHasWater = true;
+    }
+
+    public void SetBread()
+    {
+        bHasBread = true;
+    }
+
+    public void SetYeastKey()
+    {
+        bHasYeastKey = true;
+    }
+
+    
     //Bool getter
 }
