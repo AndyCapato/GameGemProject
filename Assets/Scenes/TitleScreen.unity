@@ -151,11 +151,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 377818006}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 143}
-  m_SizeDelta: {x: 220.2104, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -1225, y: 256}
+  m_SizeDelta: {x: -1919.5, y: -980}
+  m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &182599890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -210,7 +210,7 @@ MonoBehaviour:
   m_fontSizeMin: 0
   m_fontSizeMax: 0
   m_fontStyle: 1
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -295,11 +295,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f340eb250f73145d0a672f761fad8b7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GI_GameInstance
-  bKayFlour: 0
+  bHasFlour: 0
   bHasYeast: 0
   bHasSalt: 0
   bHasWater: 0
   bHasBread: 0
+  bHasFlourKey: 0
   bHasSaltKey: 0
 --- !u!4 &269169891
 Transform:
@@ -509,7 +510,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 4504964794735236308, guid: 48e3ea5f51975c446800fe636dbbfdb3, type: 3}
+  m_Sprite: {fileID: -4633363675781203247, guid: 3c468dd92dbf3a948b2bedf620a7d422, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
