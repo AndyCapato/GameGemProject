@@ -15,9 +15,6 @@ EditorBuildSettings:
     path: Assets/Scenes/BakeryLevel.unity
     guid: d91c2513fad3ae64499d6e874dbb36ec
   - enabled: 1
-    path: Assets/Scenes/ChurchLevel.unity
-    guid: adfad2a40f3201f409334ce8364058a9
-  - enabled: 1
     path: Assets/Scenes/WellLevel.unity
     guid: 20082818309e94c8c81d4f154b62e95b
   m_configObjects:
