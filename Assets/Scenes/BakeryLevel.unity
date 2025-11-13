@@ -2087,6 +2087,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NextScene
   OptionMenu: {fileID: 951569300}
   passwordInputField: {fileID: 0}
+  CashMachineButton: {fileID: 0}
 --- !u!114 &364474025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2526,6 +2527,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NextScene
   OptionMenu: {fileID: 1424663578}
   passwordInputField: {fileID: 0}
+  CashMachineButton: {fileID: 0}
 --- !u!1 &446999101
 GameObject:
   m_ObjectHideFlags: 0
@@ -3598,6 +3600,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NextScene
   OptionMenu: {fileID: 851402880}
   passwordInputField: {fileID: 0}
+  CashMachineButton: {fileID: 0}
 --- !u!1 &676137855
 GameObject:
   m_ObjectHideFlags: 0
@@ -3999,6 +4002,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NextScene
   OptionMenu: {fileID: 1218531988}
   passwordInputField: {fileID: 0}
+  CashMachineButton: {fileID: 0}
 --- !u!1 &781172050
 GameObject:
   m_ObjectHideFlags: 0
@@ -5214,6 +5218,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NextScene
   OptionMenu: {fileID: 1135486331}
   passwordInputField: {fileID: 0}
+  CashMachineButton: {fileID: 0}
 --- !u!1 &965299568
 GameObject:
   m_ObjectHideFlags: 0
@@ -6589,6 +6594,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NextScene
   OptionMenu: {fileID: 1900759912}
   passwordInputField: {fileID: 0}
+  CashMachineButton: {fileID: 0}
 --- !u!1 &1206493081
 GameObject:
   m_ObjectHideFlags: 0
@@ -8632,6 +8638,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NextScene
   OptionMenu: {fileID: 850097574}
   passwordInputField: {fileID: 366046051}
+  CashMachineButton: {fileID: 1572423577}
 --- !u!1 &1580547543
 GameObject:
   m_ObjectHideFlags: 0
@@ -9110,6 +9117,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NextScene
   OptionMenu: {fileID: 0}
   passwordInputField: {fileID: 0}
+  CashMachineButton: {fileID: 0}
 --- !u!114 &1657415534
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9800,6 +9808,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NextScene
   OptionMenu: {fileID: 1481866767}
   passwordInputField: {fileID: 0}
+  CashMachineButton: {fileID: 0}
 --- !u!1 &1883567587
 GameObject:
   m_ObjectHideFlags: 0
