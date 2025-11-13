@@ -223,6 +223,7 @@ public class BakeryScript : MonoBehaviour
             Debug.Log("Is Open");
             StartCoroutine(DelayFunction(0.5f,() => VaultPuzzle.SetActive(false)));
             VaultButton.interactable=false;
+            GI_GameInstance.instance.SetYeast();
         }
         else
         {
