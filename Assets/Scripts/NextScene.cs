@@ -3,13 +3,16 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
 using Unity.VisualScripting;
+using System.Collections;
 
 public class NextScene : MonoBehaviour
 {
     public GameObject OptionMenu;
+    //public AudioClip audioClip;
+    public AudioSource audioComponenmt;
     public TMP_InputField passwordInputField;
-
-    public Button CashMachineButton;
+    public Button CounterBTN;
+    
     string correctPassword = "Elena";
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -26,15 +29,15 @@ public class NextScene : MonoBehaviour
 
     public void ChangeSceneToSquare()
     {
-        SceneManager.LoadScene("SquareLevel");
+        StartCoroutine(DelayFunction(1,() =>SceneManager.LoadScene("SquareLevel")));
     }
     public void ChangeSceneToBakery()
     {
-        SceneManager.LoadScene("BakeryLevel");
+        StartCoroutine(DelayFunction(1,() =>SceneManager.LoadScene("BakeryLevel")));
     }
     public void ChangeSceneToWell()
     {
-        SceneManager.LoadScene("WellLevel");
+        StartCoroutine(DelayFunction(1,() =>SceneManager.LoadScene("WellLevel")));
     }
 
     public void MenuOption()
@@ -61,6 +64,8 @@ public class NextScene : MonoBehaviour
         if (passwordInputField.text.Trim().ToUpper() == correctPassword.ToUpper())
         {
             OptionMenu.SetActive(false);
+            CounterBTN.interactable=false;
+            PlayAudio();
             GI_GameInstance.instance.SetSaltKey();
             CashMachineButton.interactable = false;
             Debug.Log("Correct Password!");
@@ -72,6 +77,16 @@ public class NextScene : MonoBehaviour
             // Add logic for incorrect password
         }
         Debug.Log("Password checked in SchoolScript.");
+    }
+
+    public void PlayAudio()
+    {
+        audioComponenmt.Play();
+    }
+     public IEnumerator DelayFunction(float timer, System.Action action)
+    {
+        yield return new WaitForSeconds(timer);
+        action?.Invoke();
     }
 
 
