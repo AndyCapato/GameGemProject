@@ -463,8 +463,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0284f00c78fd64b6ca0d9d45fbb65e8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SchoolScript
-  drawerPanel: {fileID: 2015193445}
-  passwordInputField: {fileID: 10006533}
+  drawerPanel: {fileID: 0}
+  passwordInputField: {fileID: 0}
   correctPassword: Giulio
 --- !u!1 &286939223
 GameObject:

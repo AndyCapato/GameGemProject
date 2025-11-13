@@ -223,6 +223,7 @@ public class BakeryScript : MonoBehaviour
             Debug.Log("Is Open");
             StartCoroutine(DelayFunction(0.5f,() => VaultPuzzle.SetActive(false)));
             VaultButton.interactable=false;
+            GI_GameInstance.instance.SetYeast();
         }
         else
         {
@@ -232,7 +233,7 @@ public class BakeryScript : MonoBehaviour
 
     //Delay
 
-    IEnumerator DelayFunction(float timer, System.Action action)
+    public IEnumerator DelayFunction(float timer, System.Action action)
     {
         yield return new WaitForSeconds(timer);
         action?.Invoke();
