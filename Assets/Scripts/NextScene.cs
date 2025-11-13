@@ -8,6 +8,8 @@ public class NextScene : MonoBehaviour
 {
     public GameObject OptionMenu;
     public TMP_InputField passwordInputField;
+
+    public Button CashMachineButton;
     string correctPassword = "Elena";
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -60,6 +62,7 @@ public class NextScene : MonoBehaviour
         {
             OptionMenu.SetActive(false);
             GI_GameInstance.instance.SetSaltKey();
+            CashMachineButton.interactable = false;
             Debug.Log("Correct Password!");
             // Add logic for correct password
         }
