@@ -10,7 +10,7 @@ public class GI_GameInstance : MonoBehaviour
 
     public bool bHasBread = false;
     
-    public bool bHasYeastKey = false;
+    public bool bHasSaltKey = false;
 
     public static GI_GameInstance instance { get; private set; } = null;
     void Awake()
@@ -65,9 +65,9 @@ public class GI_GameInstance : MonoBehaviour
         bHasBread = true;
     }
 
-    public void SetYeastKey()
+    public void SetSaltKey()
     {
-        bHasYeastKey = true;
+        bHasSaltKey = true;
     }
 
     

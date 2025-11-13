@@ -2,12 +2,13 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
+using Unity.VisualScripting;
 
 public class NextScene : MonoBehaviour
 {
     public GameObject OptionMenu;
-     public TMP_InputField passwordInputField;
-    public string correctPassword = "1993";
+    public TMP_InputField passwordInputField;
+    string correctPassword = "Elena";
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -58,6 +59,7 @@ public class NextScene : MonoBehaviour
         if (passwordInputField.text.Trim().ToUpper() == correctPassword.ToUpper())
         {
             OptionMenu.SetActive(false);
+            GI_GameInstance.instance.SetSaltKey();
             Debug.Log("Correct Password!");
             // Add logic for correct password
         }

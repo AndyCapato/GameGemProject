@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 937cb4c77a50afc4db9caaa8ccccaf3a
+guid: 75e0bc7a89c70e2429c9beb276d3f408
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2660815272826967275
-    second: HoveArrow_0
+      213: 4760448493170390729
+    second: Square_BG_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: HoveArrow_0
+      name: Square_BG_0
       rect:
         serializedVersion: 2
-        x: 41
-        y: 23
-        width: 104
-        height: 140
+        x: 0
+        y: 0
+        width: 1600
+        height: 894
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 51be6326b92e21bd0800000000000000
-      internalID: -2660815272826967275
+      spriteID: 9c6f6febea2801240800000000000000
+      internalID: 4760448493170390729
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      HoveArrow_0: -2660815272826967275
+      Square_BG_0: 4760448493170390729
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

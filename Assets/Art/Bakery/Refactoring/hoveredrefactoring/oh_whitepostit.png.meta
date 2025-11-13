@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 897d514f3880d5a4381bf0147290bcce
+guid: d94ac8817a37a7b43b0c350acc97f7f6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5645023897091251781
-    second: Panettiere_0
+      213: -6983941644099603020
+    second: oh_whitepostit_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Panettiere_0
+      name: oh_whitepostit_0
       rect:
         serializedVersion: 2
-        x: 31
-        y: 6
-        width: 66
-        height: 120
+        x: 137
+        y: 125
+        width: 110
+        height: 134
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bb1e8499ca8d8a1b0800000000000000
-      internalID: -5645023897091251781
+      spriteID: 4b5b263c31e041f90800000000000000
+      internalID: -6983941644099603020
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Panettiere_0: -5645023897091251781
+      oh_whitepostit_0: -6983941644099603020
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
