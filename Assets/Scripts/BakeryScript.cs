@@ -104,7 +104,7 @@ public class BakeryScript : MonoBehaviour
         {
             StartCoroutine(DelayFunction(0.5f,() => ColorPuzzle.SetActive(false)));
             //ColorPuzzle.SetActive(false);
-            gameInstance.SetFlour();
+            gameInstance.SetFlourKey();
             CPButton.interactable = false;
             Debug.Log("Hai ottenuto Chiave farina");
         }
@@ -114,8 +114,9 @@ public class BakeryScript : MonoBehaviour
 
     public void FlourCheck()
     {
-        if (gameInstance.bKayFlour)
+        if (gameInstance.bHasFlourKey)
         {
+            gameInstance.bHasFlour = true;
             Debug.Log("Hai Ottenuto grano");
         }
         else
