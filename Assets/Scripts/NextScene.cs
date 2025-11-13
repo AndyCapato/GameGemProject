@@ -1,10 +1,13 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
 
 public class NextScene : MonoBehaviour
 {
     public GameObject OptionMenu;
+     public TMP_InputField passwordInputField;
+    public string correctPassword = "1993";
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -43,10 +46,29 @@ public class NextScene : MonoBehaviour
     {
         SceneManager.LoadScene("TitleScreen");
     }
-
     public void Exit()
     {
         Application.Quit();
     }
+
+        public void CheckPassword()
+    {
+        //passwordInputField.text = passwordInputField.text.Trim().ToUpper();
+        Debug.Log(passwordInputField.text);
+        if (passwordInputField.text.Trim().ToUpper() == correctPassword.ToUpper())
+        {
+            OptionMenu.SetActive(false);
+            Debug.Log("Correct Password!");
+            // Add logic for correct password
+        }
+        else
+        {
+            Debug.Log("Incorrect Password!");
+            // Add logic for incorrect password
+        }
+        Debug.Log("Password checked in SchoolScript.");
+    }
+
+
     
 }
