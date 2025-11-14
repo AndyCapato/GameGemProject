@@ -11,9 +11,15 @@ public class CandleManager : MonoBehaviour
     public Sprite spriteOff;
     public Sprite HoveredspriteOff;
     public Button CandelButton;
+    public Button Buttonrock;
+    public GameObject RockPanel;
+       public Button Buttonletter;
+    public GameObject letterpanel;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        Buttonrock.interactable = false;
         
     }
 
@@ -80,11 +86,28 @@ public class CandleManager : MonoBehaviour
         {
             StartCoroutine(DelayFunction(0.5f,() => CandleScreen.SetActive(false)));
             CandelButton.interactable = false; 
+            Buttonrock.interactable = true;
         }
     }
     IEnumerator DelayFunction(float timer, System.Action action)
     {
         yield return new WaitForSeconds(timer);
         action?.Invoke();
+    }
+    public void RockOn()
+    {
+        RockPanel.SetActive(true);
+    }
+     public void RockOff()
+    {
+        RockPanel.SetActive(false);
+    }
+     public void LetterOn()
+    {
+        letterpanel.SetActive(true);
+    }
+     public void LetterOff()
+    {
+        letterpanel.SetActive(false);
     }
 }
