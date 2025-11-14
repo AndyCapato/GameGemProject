@@ -105,8 +105,8 @@ MonoBehaviour:
   SaltSprite: {fileID: -673306825874429820, guid: 8e3cd6e2dac3dd8488afbb71479ed817, type: 3}
   YeastSprite: {fileID: 4708840977219321115, guid: 7fa9d8563d96b6a479fd6743984e056b, type: 3}
   WaterSprite: {fileID: 6049605792901559095, guid: 4641ec3e4c2cb6449adb5874c4fb6f29, type: 3}
-  FlourKeySprite: {fileID: 1694913177206695654, guid: 24795802e08dc74419131a1bb1582481, type: 3}
-  SaltKeySprite: {fileID: 1694913177206695654, guid: 24795802e08dc74419131a1bb1582481, type: 3}
+  FlourKeySprite: {fileID: 1324537671048660945, guid: 79f781816bca4fa4dae2b28bf3b85766, type: 3}
+  SaltKeySprite: {fileID: 1324537671048660945, guid: 79f781816bca4fa4dae2b28bf3b85766, type: 3}
   BreadSprite: {fileID: -1660761858345613354, guid: 168520815cc937c4bbb410d98569e26d, type: 3}
   GI: {fileID: 0}
 --- !u!1 &3656998132938117063
