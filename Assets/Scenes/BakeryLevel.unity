@@ -9672,9 +9672,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1657415533}
+      - m_Target: {fileID: 1657415537}
         m_TargetAssemblyTypeName: NextScene, Assembly-CSharp
-        m_MethodName: ChangeSceneToSquare
+        m_MethodName: BreadCheck
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
