@@ -7,6 +7,10 @@ using UnityEngine.SceneManagement;
 
 public class Inventory : MonoBehaviour
 {
+    public GameObject DropButton;
+    public GameObject InventoryObj;
+
+
     public Image FlourSlot;
     public Image SaltSlot;
     public Image YeastSlot;
@@ -22,22 +26,29 @@ public class Inventory : MonoBehaviour
     public Sprite SaltKeySprite;
     public Sprite BreadSprite;
 
-
+    public GameObject inventory;
     GI_GameInstance GI;
 
-    void Start()
+    void Awake()
     {
         GI = (GI_GameInstance)FindFirstObjectByType(typeof(GI_GameInstance));
+<<<<<<< Updated upstream
+=======
+        Debug.Log("GameInstance cercata");
+        if (GI == null)
+            Debug.LogError("GameInstance non trovata");
         GI.SetInventory(this);
+>>>>>>> Stashed changes
     }
 
     void ShowItemInInventory(Image Slot, Sprite Item)
     {
-        Slot.overrideSprite = Item;
+        Slot.sprite = Item;
     }
 
     public void ControlInventory()
     {
+        SetUIActive(inventory);
         if (GI.bHasFlour)
         {
             ShowItemInInventory(FlourSlot, FlourSprite);
@@ -69,5 +80,27 @@ public class Inventory : MonoBehaviour
             WaterSlot.enabled = false;
             ShowItemInInventory(FlourSlot, BreadSprite);
         }
+    }
+<<<<<<< Updated upstream
+    public void ShowInventory()
+    {
+        InventoryObj.SetActive(true);
+        DropButton.SetActive(false);
+    }
+    public void HideInventory()
+    {
+        DropButton.SetActive(true);
+        InventoryObj.SetActive(false);
+=======
+
+    public void SetUIActive(GameObject ui)
+    {
+        ui.SetActive(true);
+    }
+
+    public void SetUINotActive(GameObject ui)
+    {
+        ui.SetActive(false);
+>>>>>>> Stashed changes
     }
 }

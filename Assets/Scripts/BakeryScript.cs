@@ -5,6 +5,9 @@ using System.Collections;
 
 public class BakeryScript : MonoBehaviour
 {
+    //reference inventario
+    public Inventory inventory;
+
     public GI_GameInstance gameInstance;
     //Variabili colori
     public GameObject ColorPuzzle;
@@ -105,6 +108,8 @@ public class BakeryScript : MonoBehaviour
             StartCoroutine(DelayFunction(0.5f,() => ColorPuzzle.SetActive(false)));
             //ColorPuzzle.SetActive(false);
             gameInstance.SetFlourKey();
+            inventory.ControlInventory();
+            TempInventoryPopup();
             CPButton.interactable = false;
             Debug.Log("Hai ottenuto Chiave farina");
         }
@@ -117,6 +122,8 @@ public class BakeryScript : MonoBehaviour
         if (gameInstance.bHasFlourKey)
         {
             gameInstance.bHasFlour = true;
+            inventory.ControlInventory();
+            TempInventoryPopup();
             Debug.Log("Hai Ottenuto grano");
         }
         else
@@ -225,6 +232,9 @@ public class BakeryScript : MonoBehaviour
             StartCoroutine(DelayFunction(0.5f,() => VaultPuzzle.SetActive(false)));
             VaultButton.interactable=false;
             GI_GameInstance.instance.SetYeast();
+            inventory.ControlInventory();
+            TempInventoryPopup();
+            Debug.Log("Hai ottenuto il lievito!");
         }
         else
         {
@@ -238,5 +248,11 @@ public class BakeryScript : MonoBehaviour
     {
         yield return new WaitForSeconds(timer);
         action?.Invoke();
+    }
+
+    public void TempInventoryPopup()
+    {
+        StartCoroutine(DelayFunction(1.0f, () => inventory.ShowInventory()));
+        StartCoroutine(DelayFunction(2.5f, () => inventory.HideInventory()));
     }
 }
