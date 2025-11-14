@@ -32,13 +32,6 @@ public class Inventory : MonoBehaviour
     void Awake()
     {
         GI = (GI_GameInstance)FindFirstObjectByType(typeof(GI_GameInstance));
-<<<<<<< Updated upstream
-=======
-        Debug.Log("GameInstance cercata");
-        if (GI == null)
-            Debug.LogError("GameInstance non trovata");
-        GI.SetInventory(this);
->>>>>>> Stashed changes
     }
 
     void ShowItemInInventory(Image Slot, Sprite Item)
@@ -48,7 +41,7 @@ public class Inventory : MonoBehaviour
 
     public void ControlInventory()
     {
-        SetUIActive(inventory);
+        
         if (GI.bHasFlour)
         {
             ShowItemInInventory(FlourSlot, FlourSprite);
@@ -81,7 +74,6 @@ public class Inventory : MonoBehaviour
             ShowItemInInventory(FlourSlot, BreadSprite);
         }
     }
-<<<<<<< Updated upstream
     public void ShowInventory()
     {
         InventoryObj.SetActive(true);
@@ -91,16 +83,5 @@ public class Inventory : MonoBehaviour
     {
         DropButton.SetActive(true);
         InventoryObj.SetActive(false);
-=======
-
-    public void SetUIActive(GameObject ui)
-    {
-        ui.SetActive(true);
-    }
-
-    public void SetUINotActive(GameObject ui)
-    {
-        ui.SetActive(false);
->>>>>>> Stashed changes
     }
 }

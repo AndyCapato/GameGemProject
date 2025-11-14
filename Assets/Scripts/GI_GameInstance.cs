@@ -77,7 +77,6 @@ public class GI_GameInstance : MonoBehaviour
         bHasFlourKey = true;
     }
 
-        GUI.Label(new Rect(0, 0, 100, 100), "Oggetto Raccolto!");
-    }
-    //Bool getter
 }
+    //Bool getter
+
