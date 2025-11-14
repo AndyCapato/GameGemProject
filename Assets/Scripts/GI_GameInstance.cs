@@ -14,6 +14,7 @@ public class GI_GameInstance : MonoBehaviour
     public bool bHasSaltKey = false;
 
     public static GI_GameInstance instance { get; private set; } = null;
+
     void Awake()
     {
         if(instance == null)
@@ -76,5 +77,7 @@ public class GI_GameInstance : MonoBehaviour
         bHasFlourKey = true;
     }
 
+        GUI.Label(new Rect(0, 0, 100, 100), "Oggetto Raccolto!");
+    }
     //Bool getter
 }
