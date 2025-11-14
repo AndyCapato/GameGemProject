@@ -642,6 +642,35 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+<<<<<<< Updated upstream
+=======
+--- !u!114 &7875753787745685462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6629711391499464709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 950e5753174bf2146b1d1cae8197d7e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Inventory
+  FlourSlot: {fileID: 731338472381547878}
+  SaltSlot: {fileID: 4369087243002305327}
+  YeastSlot: {fileID: 6533804877468409702}
+  WaterSlot: {fileID: 6249555311601536634}
+  FlourKeySlot: {fileID: 2680074783344896464}
+  SaltKeySlot: {fileID: 8332599133718319852}
+  FlourSprite: {fileID: -7751777048443264340, guid: c9d91551c882ee448a6fae5ddd692ce7, type: 3}
+  SaltSprite: {fileID: -673306825874429820, guid: 8e3cd6e2dac3dd8488afbb71479ed817, type: 3}
+  YeastSprite: {fileID: 4708840977219321115, guid: 7fa9d8563d96b6a479fd6743984e056b, type: 3}
+  WaterSprite: {fileID: 6049605792901559095, guid: 4641ec3e4c2cb6449adb5874c4fb6f29, type: 3}
+  FlourKeySprite: {fileID: 1694913177206695654, guid: 24795802e08dc74419131a1bb1582481, type: 3}
+  SaltKeySprite: {fileID: 1694913177206695654, guid: 24795802e08dc74419131a1bb1582481, type: 3}
+  BreadSprite: {fileID: 0}
+  inventory: {fileID: 6629711391499464709}
+>>>>>>> Stashed changes
 --- !u!1 &7447025174302676256
 GameObject:
   m_ObjectHideFlags: 0

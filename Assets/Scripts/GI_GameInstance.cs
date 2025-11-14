@@ -14,6 +14,7 @@ public class GI_GameInstance : MonoBehaviour
     public bool bHasSaltKey = false;
 
     public static GI_GameInstance instance { get; private set; } = null;
+
     void Awake()
     {
         if(instance == null)
@@ -85,7 +86,19 @@ public class GI_GameInstance : MonoBehaviour
 
     void OnGui()
     {
+<<<<<<< Updated upstream
         GUI.Label(new Rect(0, 0, 100, 100), "Oggetto Raccolto!");
+=======
+        inventory = myinventory;
+        if (inventory != null)
+        {
+            Debug.Log("Inventory trovata e diversa da nulla");
+        }
+        else
+        {
+            Debug.LogError("Inventory non trovato");
+        }
+>>>>>>> Stashed changes
     }
     //Bool getter
 }
