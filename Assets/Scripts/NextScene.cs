@@ -19,6 +19,8 @@ public class NextScene : MonoBehaviour
     public GameObject rawImageVideo;
     
     string correctPassword = "Elena";
+
+    public Inventory inventory;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -62,7 +64,7 @@ public class NextScene : MonoBehaviour
         Application.Quit();
     }
 
-        public void CheckPassword()
+    public void CheckPassword()
     {
         //passwordInputField.text = passwordInputField.text.Trim().ToUpper();
         Debug.Log(passwordInputField.text);
@@ -73,6 +75,8 @@ public class NextScene : MonoBehaviour
             PlayAudio();
             GI_GameInstance.instance.SetSaltKey();
             Debug.Log("Correct Password!");
+            inventory.ControlInventory();
+            TempInventoryPopup();
             // Add logic for correct password
         }
         else
@@ -100,6 +104,11 @@ public class NextScene : MonoBehaviour
         action?.Invoke();
     }
 
+    public void TempInventoryPopup()
+    {
+        StartCoroutine(DelayFunction(1.0f, () => inventory.ShowInventory()));
+        StartCoroutine(DelayFunction(2.5f, () => inventory.HideInventory()));
+    }
 
-    
+
 }

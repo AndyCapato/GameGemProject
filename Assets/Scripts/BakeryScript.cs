@@ -242,6 +242,26 @@ public class BakeryScript : MonoBehaviour
         }
     }
 
+    public void SetLockedBox()
+    {
+        if (GI_GameInstance.instance.bHasSaltKey)
+        {
+            GI_GameInstance.instance.SetSalt();
+            inventory.ControlInventory();
+            TempInventoryPopup();
+        }
+    }
+
+    public void CheckOvenForBread()
+    {
+        if(GI_GameInstance.instance.bHasFlour && GI_GameInstance.instance.bHasSalt && GI_GameInstance.instance.bHasYeast && GI_GameInstance.instance.bHasWater)
+        {
+            GI_GameInstance.instance.SetBread();
+            inventory.ControlInventory();
+            TempInventoryPopup();
+        }
+    }
+
     //Delay
 
     public IEnumerator DelayFunction(float timer, System.Action action)
