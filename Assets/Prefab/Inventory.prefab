@@ -56,6 +56,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 950e5753174bf2146b1d1cae8197d7e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Inventory
+  DropButton: {fileID: 8049687029116024852}
+  InventoryObj: {fileID: 1676433937459403612}
   FlourSlot: {fileID: 731338472381547878}
   SaltSlot: {fileID: 4369087243002305327}
   YeastSlot: {fileID: 6533804877468409702}

@@ -44,48 +44,37 @@ public class GI_GameInstance : MonoBehaviour
     public void SetFlour()
     {
         bHasFlour = true;
-        OnGui();
     }
 
     public void SetYeast()
     {
         bHasYeast = true;
-        OnGui();
     }
     
     public void SetSalt()
     {
         bHasSalt = true;
-        OnGui();
     }
 
     public void SetWater()
     {
         bHasWater = true;
-        OnGui();
     }
 
     public void SetBread()
     {
         bHasBread = true;
-        OnGui();
     }
 
     public void SetSaltKey()
     {
         bHasSaltKey = true;
-        OnGui();
     }
 
     public void SetFlourKey()
     {
         bHasFlourKey = true;
-        OnGui();
     }
 
-    void OnGui()
-    {
-        GUI.Label(new Rect(0, 0, 100, 100), "Oggetto Raccolto!");
-    }
     //Bool getter
 }
