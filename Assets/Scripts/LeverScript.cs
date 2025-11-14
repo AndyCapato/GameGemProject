@@ -11,6 +11,9 @@ public class LeverScript : MonoBehaviour
     public int LeverIndex = 0;
     public int GlobalIndex = 0;
 
+    public GI_GameInstance gameInstance;
+    public Inventory inventory;
+
     public void  RotateRight()
     {
         LeverImage.transform.eulerAngles = new Vector3 ( LeverImage.transform.eulerAngles.x,LeverImage.transform.eulerAngles.y,LeverImage.transform.eulerAngles.z - 90);
@@ -56,6 +59,9 @@ public class LeverScript : MonoBehaviour
                 Debug.Log("Risolto");
                 StartCoroutine(DelayFunction(0.5f,()=> SetOff()));
                 LeverButton.interactable=false;
+                gameInstance.SetWater();
+                inventory.ControlInventory();
+                TempInventoryPopup();
             }
             else
             {
@@ -94,7 +100,7 @@ public class LeverScript : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        gameInstance = (GI_GameInstance)FindFirstObjectByType(typeof(GI_GameInstance));
     }
 
     // Update is called once per frame
@@ -106,5 +112,11 @@ public class LeverScript : MonoBehaviour
     {
         yield return new WaitForSeconds(timer);
         action?.Invoke();
+    }
+
+    public void TempInventoryPopup()
+    {
+        StartCoroutine(DelayFunction(1.0f, () => inventory.ShowInventory()));
+        StartCoroutine(DelayFunction(2.5f, () => inventory.HideInventory()));
     }
 }
