@@ -4,6 +4,7 @@ using UnityEngine.UI;
 using TMPro;
 using Unity.VisualScripting;
 using System.Collections;
+using UnityEngine.Video;
 
 public class NextScene : MonoBehaviour
 {
@@ -12,6 +13,10 @@ public class NextScene : MonoBehaviour
     public AudioSource audioComponenmt;
     public TMP_InputField passwordInputField;
     public Button CounterBTN;
+
+    public VideoPlayer videoPlayer;
+
+    public GameObject rawImageVideo;
     
     string correctPassword = "Elena";
     
@@ -81,6 +86,13 @@ public class NextScene : MonoBehaviour
     public void PlayAudio()
     {
         audioComponenmt.Play();
+    }
+
+    public void PlayVideo()
+    {
+        rawImageVideo.SetActive(true);
+        videoPlayer.Play();
+        StartCoroutine(DelayFunction(2.5f,() =>SceneManager.LoadScene("SquareLevel")));
     }
      public IEnumerator DelayFunction(float timer, System.Action action)
     {
