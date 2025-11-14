@@ -13,8 +13,6 @@ public class GI_GameInstance : MonoBehaviour
     public bool bHasFlourKey = false;
     public bool bHasSaltKey = false;
 
-    public Inventory inventory;
-
     public static GI_GameInstance instance { get; private set; } = null;
     void Awake()
     {
@@ -46,48 +44,48 @@ public class GI_GameInstance : MonoBehaviour
     public void SetFlour()
     {
         bHasFlour = true;
-        inventory.ControlInventory();
+        OnGui();
     }
 
     public void SetYeast()
     {
         bHasYeast = true;
-        inventory.ControlInventory();
+        OnGui();
     }
     
     public void SetSalt()
     {
         bHasSalt = true;
-        inventory.ControlInventory();
+        OnGui();
     }
 
     public void SetWater()
     {
         bHasWater = true;
-        inventory.ControlInventory();
+        OnGui();
     }
 
     public void SetBread()
     {
         bHasBread = true;
-        inventory.ControlInventory();
+        OnGui();
     }
 
     public void SetSaltKey()
     {
         bHasSaltKey = true;
-        inventory.ControlInventory();
+        OnGui();
     }
 
     public void SetFlourKey()
     {
         bHasFlourKey = true;
-        inventory.ControlInventory();
+        OnGui();
     }
 
-    public void SetInventory(Inventory myinventory)
+    void OnGui()
     {
-        inventory = myinventory;
+        GUI.Label(new Rect(0, 0, 100, 100), "Oggetto Raccolto!");
     }
     //Bool getter
 }
