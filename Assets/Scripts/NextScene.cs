@@ -110,5 +110,16 @@ public class NextScene : MonoBehaviour
         StartCoroutine(DelayFunction(2.5f, () => inventory.HideInventory()));
     }
 
+    public void BreadCheck()
+    {
+       if(GI_GameInstance.instance.bHasBread)
+        {
+            SceneManager.LoadScene("WinScreen");
+        }
+        else
+        {
+            SceneManager.LoadScene("SquareLevel");
+        }
+    }
 
 }
