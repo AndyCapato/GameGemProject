@@ -26,12 +26,19 @@ public class Inventory : MonoBehaviour
     public Sprite SaltKeySprite;
     public Sprite BreadSprite;
 
-    public GameObject inventory;
-    GI_GameInstance GI;
+    public GI_GameInstance GI;
 
-    void Awake()
+    void Start()
     {
         GI = (GI_GameInstance)FindFirstObjectByType(typeof(GI_GameInstance));
+        if(GI != null )
+        {
+            Debug.Log("GI trovata!");
+        }
+        else
+        {
+            Debug.LogError("GI non trovata!");
+        }
     }
 
     void ShowItemInInventory(Image Slot, Sprite Item)
@@ -76,6 +83,7 @@ public class Inventory : MonoBehaviour
     }
     public void ShowInventory()
     {
+        ControlInventory();
         InventoryObj.SetActive(true);
         DropButton.SetActive(false);
     }

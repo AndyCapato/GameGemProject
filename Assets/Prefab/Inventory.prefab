@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4311633701119497107}
-  - component: {fileID: 6503673913363687799}
   m_Layer: 5
   m_Name: DroppedDown
   m_TagString: Untagged
@@ -44,33 +43,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -223}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &6503673913363687799
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1676433937459403612}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 950e5753174bf2146b1d1cae8197d7e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Inventory
-  DropButton: {fileID: 8049687029116024852}
-  InventoryObj: {fileID: 1676433937459403612}
-  FlourSlot: {fileID: 731338472381547878}
-  SaltSlot: {fileID: 4369087243002305327}
-  YeastSlot: {fileID: 6533804877468409702}
-  WaterSlot: {fileID: 6249555311601536634}
-  FlourKeySlot: {fileID: 2680074783344896464}
-  SaltKeySlot: {fileID: 8332599133718319852}
-  FlourSprite: {fileID: -7751777048443264340, guid: c9d91551c882ee448a6fae5ddd692ce7, type: 3}
-  SaltSprite: {fileID: -673306825874429820, guid: 8e3cd6e2dac3dd8488afbb71479ed817, type: 3}
-  YeastSprite: {fileID: 4708840977219321115, guid: 7fa9d8563d96b6a479fd6743984e056b, type: 3}
-  WaterSprite: {fileID: 6049605792901559095, guid: 4641ec3e4c2cb6449adb5874c4fb6f29, type: 3}
-  FlourKeySprite: {fileID: 1694913177206695654, guid: 24795802e08dc74419131a1bb1582481, type: 3}
-  SaltKeySprite: {fileID: 1694913177206695654, guid: 24795802e08dc74419131a1bb1582481, type: 3}
-  BreadSprite: {fileID: 0}
 --- !u!1 &2151590467781024549
 GameObject:
   m_ObjectHideFlags: 0
@@ -80,6 +52,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1078997958492352712}
+  - component: {fileID: 6667032107645700749}
   m_Layer: 5
   m_Name: Inventory
   m_TagString: Untagged
@@ -108,6 +81,34 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 56}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &6667032107645700749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2151590467781024549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 950e5753174bf2146b1d1cae8197d7e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Inventory
+  DropButton: {fileID: 8049687029116024852}
+  InventoryObj: {fileID: 1676433937459403612}
+  FlourSlot: {fileID: 731338472381547878}
+  SaltSlot: {fileID: 4369087243002305327}
+  YeastSlot: {fileID: 6533804877468409702}
+  WaterSlot: {fileID: 6249555311601536634}
+  FlourKeySlot: {fileID: 2680074783344896464}
+  SaltKeySlot: {fileID: 8332599133718319852}
+  FlourSprite: {fileID: -7751777048443264340, guid: c9d91551c882ee448a6fae5ddd692ce7, type: 3}
+  SaltSprite: {fileID: -673306825874429820, guid: 8e3cd6e2dac3dd8488afbb71479ed817, type: 3}
+  YeastSprite: {fileID: 4708840977219321115, guid: 7fa9d8563d96b6a479fd6743984e056b, type: 3}
+  WaterSprite: {fileID: 6049605792901559095, guid: 4641ec3e4c2cb6449adb5874c4fb6f29, type: 3}
+  FlourKeySprite: {fileID: 1694913177206695654, guid: 24795802e08dc74419131a1bb1582481, type: 3}
+  SaltKeySprite: {fileID: 1694913177206695654, guid: 24795802e08dc74419131a1bb1582481, type: 3}
+  BreadSprite: {fileID: -1660761858345613354, guid: 168520815cc937c4bbb410d98569e26d, type: 3}
+  GI: {fileID: 0}
 --- !u!1 &3656998132938117063
 GameObject:
   m_ObjectHideFlags: 0
@@ -304,21 +305,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2212496042115378335}
-        m_TargetAssemblyTypeName: NextScene, Assembly-CSharp
-        m_MethodName: MenuOption
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1442152531909533953}
-        m_TargetAssemblyTypeName: NextScene, Assembly-CSharp
-        m_MethodName: CLoseOption
+      - m_Target: {fileID: 6667032107645700749}
+        m_TargetAssemblyTypeName: Inventory, Assembly-CSharp
+        m_MethodName: HideInventory
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -344,6 +333,8 @@ MonoBehaviour:
   audioComponenmt: {fileID: 0}
   passwordInputField: {fileID: 0}
   CounterBTN: {fileID: 0}
+  videoPlayer: {fileID: 0}
+  rawImageVideo: {fileID: 0}
 --- !u!1 &4690057205926319871
 GameObject:
   m_ObjectHideFlags: 0
@@ -644,35 +635,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
-<<<<<<< Updated upstream
-=======
---- !u!114 &7875753787745685462
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6629711391499464709}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 950e5753174bf2146b1d1cae8197d7e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Inventory
-  FlourSlot: {fileID: 731338472381547878}
-  SaltSlot: {fileID: 4369087243002305327}
-  YeastSlot: {fileID: 6533804877468409702}
-  WaterSlot: {fileID: 6249555311601536634}
-  FlourKeySlot: {fileID: 2680074783344896464}
-  SaltKeySlot: {fileID: 8332599133718319852}
-  FlourSprite: {fileID: -7751777048443264340, guid: c9d91551c882ee448a6fae5ddd692ce7, type: 3}
-  SaltSprite: {fileID: -673306825874429820, guid: 8e3cd6e2dac3dd8488afbb71479ed817, type: 3}
-  YeastSprite: {fileID: 4708840977219321115, guid: 7fa9d8563d96b6a479fd6743984e056b, type: 3}
-  WaterSprite: {fileID: 6049605792901559095, guid: 4641ec3e4c2cb6449adb5874c4fb6f29, type: 3}
-  FlourKeySprite: {fileID: 1694913177206695654, guid: 24795802e08dc74419131a1bb1582481, type: 3}
-  SaltKeySprite: {fileID: 1694913177206695654, guid: 24795802e08dc74419131a1bb1582481, type: 3}
-  BreadSprite: {fileID: 0}
-  inventory: {fileID: 6629711391499464709}
->>>>>>> Stashed changes
 --- !u!1 &7447025174302676256
 GameObject:
   m_ObjectHideFlags: 0
@@ -760,7 +722,6 @@ GameObject:
   - component: {fileID: 8352494759589397707}
   - component: {fileID: 7367992061889093576}
   - component: {fileID: 1704624821767929884}
-  - component: {fileID: 1442152531909533953}
   m_Layer: 5
   m_Name: BTN_ShowInventory
   m_TagString: Untagged
@@ -869,21 +830,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1442152531909533953}
-        m_TargetAssemblyTypeName: NextScene, Assembly-CSharp
-        m_MethodName: MenuOption
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 6503673913363687799}
+      - m_Target: {fileID: 6667032107645700749}
         m_TargetAssemblyTypeName: Inventory, Assembly-CSharp
-        m_MethodName: ControlInventory
+        m_MethodName: ShowInventory
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -893,34 +842,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2212496042115378335}
-        m_TargetAssemblyTypeName: NextScene, Assembly-CSharp
-        m_MethodName: CLoseOption
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &1442152531909533953
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8049687029116024852}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7cad358b3c72d464db956df9817aafa0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NextScene
-  OptionMenu: {fileID: 1676433937459403612}
-  audioComponenmt: {fileID: 0}
-  passwordInputField: {fileID: 0}
-  CounterBTN: {fileID: 0}
 --- !u!1 &8701295782885514965
 GameObject:
   m_ObjectHideFlags: 0
